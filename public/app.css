@@ -68,6 +68,9 @@ button {
   height: 100vh;
   grid-gap: 10px;
 }
+.hide {
+  display: none !important;
+}
 
 #containers > div {
   text-align: center;

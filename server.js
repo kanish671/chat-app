@@ -31,7 +31,7 @@ io.on('connection', (socket) => {
 
   socket.on('disconnect', () => {
     console.log('Someone disconnected');
-    io.emit('user joined', 'A user disconnected');
+    io.emit('user left', 'A user disconnected');
   });
 });
 

@@ -17,6 +17,7 @@
     const room = arr.join('-');
     socket.emit('join room', { room: room, from, to });
     messages.innerHTML = '';
+    form.classList.remove('hide');
     send.removeAttribute('disabled');
     messages.setAttribute('data-room', room);
   }
